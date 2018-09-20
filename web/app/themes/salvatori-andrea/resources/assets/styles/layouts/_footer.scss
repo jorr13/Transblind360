@@ -1,0 +1,220 @@
+footer{
+  .containerfooter {
+    height: auto;
+    background: linear-gradient(to right, rgba(29,29,31,1) 0%, rgba(71,71,71,1) 50%, rgba(29,29,31,1) 100%);
+    position: relative;
+  }
+  
+  .parteuna-footer {
+    padding-top: 8vh;
+    position: relative;
+    color: white;
+    padding-left: 5%;
+  }
+  
+  .columns {
+    margin-bottom: 0 !important;
+  }
+  
+  .primera-seccion {
+    position: relative;
+  }
+  
+  .image-contenedor {
+    position: relative;
+    width: 180px;
+    min-width: 100px;
+    padding-bottom: 8vh;
+  }
+  
+  .paginas-footer {
+    width: 280px;
+    min-width: 180px;
+    position: relative;
+  }
+  
+  .opciones-paginas {
+    padding-bottom: 6px;
+  
+    a {
+      font-size: 2.5vh;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  
+  .title-contacto-contenedor {
+    font-size: 2.5vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 75px;
+  }
+  
+  .derechos-reservados {
+    width: 300px;
+    min-width: 180px;
+    font-size: 1.8vh;
+    padding-top: 20vh;
+    text-transform: uppercase;
+  }
+  
+  .partedos-footer {
+    border-radius: 4px;
+    margin-top: 70px;
+    background: white;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .title-con-nosotros {
+    padding-top: 4%;
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    text-align: center;
+  
+    h2{
+      color: $gris;
+      font-size: 4vh;
+      text-transform: uppercase;
+      font-weight: 600;   
+    }
+  }
+  
+  .parrafo-title {
+    font-weight: 600;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+  }
+  
+  .contenedor-input {
+    margin-top: 2vh;
+    position: relative;
+  }
+  
+  .contenedor-input-tarjeta {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .contenedor-input-tarjeta input {
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 3px;
+    padding-left: 5%;
+  }
+  
+  .contenedor-input-tarjeta {
+    text-align: center;
+    position: relative;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+  }
+  
+  .container-boton-enviar {
+    text-align: center;
+    position: relative;
+    padding-bottom: 3vh;
+  }
+  
+  .boton-enviar {
+    font-size: 1.8vh;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: #1d1d1f;
+    padding: 8px 25px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+  }
+  
+  .parrafo-abajo-footer {
+    text-align: center;
+  
+    h2 {    
+      font-size: 3vh;
+      padding-bottom: 10px;
+      font-weight: 600;
+      color: #474747;
+    }
+  }
+  
+  .parrafo-primario{
+    color: #474747;
+    font-weight: 600;
+    font-size: 2vh;
+  }
+  
+  .parrafo-secundario {
+    text-transform: uppercase;
+    font-size: 2vh;
+  }
+  
+  .parrafo-tercero {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 1.6vh;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  .ico-contenedor-redes {
+    width: 50px;
+    padding-right: 5px;
+  }
+
+  .ico-footer-redes {
+    display: flex; 
+    width: 200px;
+    margin-top: 17%;
+
+    svg {
+     fill: white !important;
+     width: 38px;
+     height: 38px;
+    }
+  }
+  
+  @media only screen and (max-width:768px) {
+    .parteuna {
+      padding-left: 0%;
+    }
+    
+    .image-contenedor {
+      margin: 0 auto;
+    }
+    
+    .paginas-footer {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .title-contacto-contenedor {
+      text-align: center;
+    }
+  
+    .derechos-reservados {
+      width: 100%;
+      text-align: center;
+    }
+
+    .ico-footer-redes {
+      margin: 0 auto;
+      margin-top: 5%;
+    }
+
+    .derechos-reservados {
+      padding-top: 10vh;
+    }
+
+    .partedos-footer {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
