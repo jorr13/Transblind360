@@ -1,0 +1,113 @@
+.sobre-nosotros {
+  background-color: white;
+  padding: 5%;
+  position: relative;
+
+  .contenedor-titulo-principal{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5vh;
+
+    h3{
+        font-size: 5vh;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 2.5vh;
+        padding-top: 16px;
+        padding-bottom: 10vh;
+    }
+  }
+  .contenedor-padre-tarjeta-nosotros{
+    position: relative;
+    padding: 0px 30px;
+    height: auto;
+
+    .contenedor-padre-tres-tarjeta {
+        background: $degradado-circulo;
+        color: white;
+        border: 1px solid white;
+        height: auto;
+
+      .contenedor-tres-tarjeta{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0px !important;
+
+        .tres-tarjeta {
+            text-align: center;
+            height: 15vh;
+            background: $degradado-circulo;
+            color: white;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            padding-top: 33px;
+            font-weight: 600;
+            font-size: 2.2vh;
+            text-transform: uppercase;
+            transition: 1s;
+            position: relative;
+
+            &:hover{
+                background: $degradado-amarillo;
+                transition: 1s;
+            }
+
+            &:nth-of-type(1n){
+                border-right: 1px solid white;
+            }
+            &:nth-of-type(2n){
+                border-right: unset;
+                border-left: unset;
+            }
+            &:nth-of-type(3n){
+                border-right: unset;
+                border-left: 1px solid white;
+            }
+        }
+
+      }
+      .contenedor-padre-info-nosotros{
+        position: relative;
+        padding: 55px 40px;
+
+        .contenedor-info-nosotros{
+            position: absolute;
+            
+            h3{
+                padding-bottom: 35px;
+                font-size: 3.5vh;
+                font-weight: 500;
+            }
+            p{
+                font-size: 2.2vh;
+                padding-bottom: 40px;
+            } 
+        }
+        .boton-sobre-nosotros{    
+            padding: 10px 15px;
+            color: black;
+            background: white;
+            font-weight: 600;
+            font-size: 2vh;
+            border-radius: 5px;
+            background-position: center;
+            text-transform: uppercase;
+            transition: .6s;
+            background-size: 200px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contenedor-padre-tarjeta-nosotros{
+
+    .contenedor-padre-tres-tarjeta{
+        height: 570px !important;
+    }
+  }
+}
