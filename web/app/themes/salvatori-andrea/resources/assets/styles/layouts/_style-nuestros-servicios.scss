@@ -30,12 +30,14 @@
         height: 70vh;
         overflow: hidden;
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
+        transition: 0.5s;
 
       &:hover{
+        background-size: 180% !important;
+        transition: 0.5s;
+
         .contenedor-contenido-servicio {
-          height: 300px;
+          height: 180px;
           transition: 0.5s;
         }
       } 
@@ -56,7 +58,7 @@
       }
 
       .contenedor-contenido-servicio {
-        bottom: 55px;
+        bottom: 26px;
         position: absolute;
         color: white;
         width: 350px;
@@ -123,8 +125,12 @@
         background-repeat: no-repeat;
         color: white;
         overflow: hidden;
+        transition: 0.5s;
 
         &:hover {
+          background-size: 180% !important;
+          transition: 0.5s;
+
           .contenedor-contenido-servicio-cuatro-tarjeta{
             height: 200px;
             transition: 0.5s;
@@ -215,8 +221,13 @@
       font-size: 2.5vh;
       border-radius: 5px;
       background-position: center;
-      transition: .6s;
-      background-size: 200px;
+      transition: .5s;
+
+      &:hover{
+        background: $amarillo;
+        color: white;
+        transition: 0.5s;
+      }
     }
   }
 }

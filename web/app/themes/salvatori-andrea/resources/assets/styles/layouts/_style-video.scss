@@ -61,8 +61,13 @@
     font-size: 2.5vh;
     border-radius: 5px;
     background-position: center;
-    transition: 0.6s;
     background-size: 200px;
+    transition: 0.5s;
+
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.1);
+    }
   }
 
   .boton-gris {
@@ -73,6 +78,12 @@
     font-size: 2.5vh;
     border-radius: 5px;
     margin-left: 15px;
+    transition: 0.5s;
+
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.1);
+    }
   }
 
   #myVideo {

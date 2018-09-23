@@ -1,9 +1,9 @@
-<div class="sobre-nosotros">
-    <div class="contenedor-titulo-principal">
+<div class="sobre-nosotros ">
+    <div class="contenedor-titulo-principal animate fadeInUp">
         <h3>Conoce sobre nosotros</h3>
         <p>Nuestra prioridad es alcanzar la excelencia en todos los servicios, poniendo atencion a los mas pequeños detalles en el control de la calidad de sus procesos y equipos</p>
     </div>
-    <div class="contenedor-padre-tarjeta-nosotros columns is-multiline">
+    <div class="contenedor-padre-tarjeta-nosotros columns is-multiline animate fadeInUp">
         <div class="contenedor-padre-tres-tarjeta column is-7">
             <div class="contenedor-tres-tarjeta columns is-mobile is-12  is-paddingless">
                 <a href="javascript:void(0)" id="que-hacemos" class="tres-tarjeta column is-4">

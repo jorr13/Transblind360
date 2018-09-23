@@ -9,14 +9,12 @@
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'sage-menu']) !!}
         @endif
 
-  
     </div>
-
 </nav>
 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="boton-menu-responsive">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
 </a>
 <div class="menu-responsive">
     <div class="menu-container">
@@ -27,5 +25,4 @@
             @endif
         </nav>
     </div>
-    
 </div>

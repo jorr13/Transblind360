@@ -1,6 +1,6 @@
-<footer class="footer-transblind">
-  <div class="containerfooter columns is-multiline">
-    <div class="parteuna-footer column is-5">
+<footer class="footer-transblind ">
+  <div class="containerfooter columns is-multiline ">
+    <div class="parteuna-footer column is-5 animate fadeInUp">
       <div class="primera-seccion column is-3">
         <div class="image-contenedor">
           <img src="{{ home_url('app/uploads/2018/09/logo-transblind.png') }} " alt="">
@@ -71,7 +71,7 @@
         </div>   
       </div>
     </div>
-    <div class="partedos-footer column is-6" id="footer-enviar">
+    <div class="partedos-footer column is-6 animate fadeInUp" id="footer-enviar">
       <div class="contenedorformulario">
         <div class="title-con-nosotros">
           <h2>pongase en contacto con nosotros</h2>

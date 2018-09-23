@@ -50,6 +50,12 @@
     background-position: center;
     transition: .6s;
     background-size: 200px;
+    transition: 0.5s;
+
+    &:hover{
+      transition: 0.5s;
+      transform: scale(1.1);
+    }
   }
   
   .timeline-item {

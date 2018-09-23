@@ -96,8 +96,14 @@
             border-radius: 5px;
             background-position: center;
             text-transform: uppercase;
-            transition: .6s;
             background-size: 200px;
+            transition: 0.5s;
+
+            &:hover{
+                transition: 0.5s;
+                color: white;
+                background: $amarillo;
+            }
         }
       }
     }

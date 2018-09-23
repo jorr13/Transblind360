@@ -17309,6 +17309,14 @@ label.panel-block:hover {
 
 #menu-primary .sage-menu a {
   color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-primary .sage-menu a:hover {
+  color: #d0a338;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 #menu-primary .sage-menu #menu-item-21 {
@@ -17316,10 +17324,24 @@ label.panel-block:hover {
   color: black;
   border-radius: 5px;
   padding: 7px 12px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 #menu-primary .sage-menu #menu-item-21 a {
   color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-primary .sage-menu #menu-item-21:hover {
+  background: #d0a338;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#menu-primary .sage-menu #menu-item-21:hover a {
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -17757,9 +17779,16 @@ body#tinymce {
   font-size: 2.5vh;
   border-radius: 5px;
   background-position: center;
-  -webkit-transition: .6s;
-  transition: .6s;
   background-size: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenedor-video .boton-amarillo:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contenedor-video .boton-gris {
@@ -17770,6 +17799,15 @@ body#tinymce {
   font-size: 2.5vh;
   border-radius: 5px;
   margin-left: 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenedor-video .boton-gris:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contenedor-video #myVideo {
@@ -17824,12 +17862,18 @@ body#tinymce {
   height: 70vh;
   overflow: hidden;
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande:hover {
+  background-size: 180% !important;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande:hover .contenedor-contenido-servicio {
-  height: 300px;
+  height: 180px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -17858,7 +17902,7 @@ body#tinymce {
 }
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande .contenedor-contenido-servicio {
-  bottom: 55px;
+  bottom: 26px;
   position: absolute;
   color: white;
   width: 350px;
@@ -17935,6 +17979,14 @@ body#tinymce {
   background-repeat: no-repeat;
   color: white;
   overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .cuatrotarjetas .tarjeta-peque:hover {
+  background-size: 180% !important;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .cuatrotarjetas .tarjeta-peque:hover .contenedor-contenido-servicio-cuatro-tarjeta {
@@ -18041,9 +18093,15 @@ body#tinymce {
   font-size: 2.5vh;
   border-radius: 5px;
   background-position: center;
-  -webkit-transition: .6s;
-  transition: .6s;
-  background-size: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.contenedor-padre-nuestros-servicios .contenedor-boton-vermas .boton-vermas:hover {
+  background: #d0a338;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media only screen and (max-width: 768px) {
@@ -18119,6 +18177,15 @@ body#tinymce {
   -webkit-transition: .6s;
   transition: .6s;
   background-size: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.noticias .boton-registrar:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .noticias .timeline-item {
@@ -18397,9 +18464,16 @@ body#tinymce {
   border-radius: 5px;
   background-position: center;
   text-transform: uppercase;
-  -webkit-transition: .6s;
-  transition: .6s;
   background-size: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.sobre-nosotros .contenedor-padre-tarjeta-nosotros .contenedor-padre-tres-tarjeta .contenedor-padre-info-nosotros .boton-sobre-nosotros:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+  background: #d0a338;
 }
 
 @media only screen and (max-width: 768px) {
