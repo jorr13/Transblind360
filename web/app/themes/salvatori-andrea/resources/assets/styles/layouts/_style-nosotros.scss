@@ -1,0 +1,248 @@
+.contenedor-padre-nosotros{
+  .contenedor-titulo-nosotros{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 35px;
+    color: $gris;
+    padding-top: 30px;
+
+    h3 {
+        padding-bottom: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 3.5vh;
+        color: $gris;  
+    }
+    p {
+        padding-top: 10px;
+        font-size: 2.5vh;
+    }
+  }
+
+  .contenedor-cuadro-primario {
+    padding: 35px 120px !important;
+    position: relative;
+
+    .contenedor-texto-left{
+        padding: 10px 25px;
+        position: relative;
+        color: $gris;
+
+      h3{
+        text-transform: uppercase;
+        font-size: 3.5vh;
+        font-weight: 700;
+        padding-top: 15px;
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+
+  .contenedor-cuadro-secundario {
+    padding: 35px 120px !important;
+    position: relative;
+
+    .contenedor-texto-right{
+        padding: 10px 25px;
+        position: relative;
+        color: $gris;
+
+      h3{
+        text-transform: uppercase;
+        font-size: 3.5vh;
+        font-weight: 700;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .contenedor-padre-nuestro-valores{
+    background: $degradado-circulo;
+    position: relative;
+    height: auto;
+    padding: 115px 100px !important;
+
+    .contenedor-tarjeta-valores{
+        padding: 0 75px 0px 20px;
+
+      .contenedor-hijo-tarjeta-valores{
+        background: white;
+        border-radius: 6px;
+        padding: 30px 36px;
+        width: 290px;
+
+        h3{
+            text-transform: uppercase;
+            font-size: 4vh;
+            font-weight: 700;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        } 
+        p {
+            padding-bottom: 35px;
+            font-size: 2vh;
+        }
+      }
+    }
+    .contenedor-padre-descrip-valores{
+        position: relative;
+        overflow: hidden;
+
+      .contenedor-tarjetas{
+        position: relative;
+
+        .tarjeta-descrip-valores{
+            position: relative;
+
+          .contendor-img-valores{
+            width: 60px;
+            height: 60px;
+          }
+          h3{
+            color: white;
+            font-size: 2.5vh;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          p{
+            color: white;
+            font-size: 2vh;
+          }
+        }
+      }
+    }
+  }
+  .contenedor-padre-conocer-nuestro-servicios{
+    position: relative;
+    padding: 15px 10px;
+
+    .contenedor-title-nuestro-servicio{
+        width: 80%;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 60px;
+        h3{
+            color: $gris;
+            font-size: 3.5vh;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        p{
+          color: $gris;
+          font-size: 2.5vh;
+        }
+    }
+    .contenedor-boton-ir-servicios{
+      text-align: center;
+      padding-bottom: 60px;
+      width: 15%;
+      margin: 0 auto;
+      a{
+        padding: 6px 15px;
+        color: white;
+        background: $degradado-amarillo;
+        font-weight: 600;
+        font-size: 2.5vh;
+        border-radius: 5px;
+        background-position: center;
+        background-size: 200px;
+        transition: 0.5s;
+        display: block;
+        
+        &:hover{
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:1000px) {
+    .contenedor-padre-nosotros {
+        .contenedor-padre-nuestro-valores{
+            .contenedor-padre-descrip-valores {
+                .contenedor-tarjetas{
+                    padding-left: 51px
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .contenedor-padre-nosotros {
+        .contenedor-padre-nuestro-valores{
+            padding: 115px 50px !important;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .contenedor-padre-nosotros {
+        .contenedor-padre-nuestro-valores {
+            .contenedor-tarjeta-valores{
+                padding: 0 0px 40px 0px;
+
+                .contenedor-hijo-tarjeta-valores{
+                    margin: 0 auto;
+                    padding: 55px 36px;
+                }
+            }
+            .contenedor-padre-descrip-valores{
+                .contenedor-tarjetas { 
+                    text-align: center;
+                    padding-left: 0px;
+                    padding: 0 42px;
+
+                    .tarjeta-descrip-valores {
+                        .contendor-img-valores{
+                            margin: 0 auto;  
+                        }
+                    }
+                }
+            } 
+        }
+        .contenedor-padre-conocer-nuestro-servicios{
+            .contenedor-boton-ir-servicios{
+                width: 25%;
+            }
+        } 
+    }
+}
+@media only screen and (max-width:768px) {
+    .contenedor-padre-nosotros {
+        .contenedor-cuadro-primario {
+            padding: 35px 30px !important;
+            position: relative;
+            .contenedor-texto-left {
+                padding: 10px 25px 20px 25px;
+            }
+        } 
+        .contenedor-cuadro-secundario {
+            padding: 35px 30px !important;
+            position: relative;
+            .contenedor-texto-right {
+                padding: 10px 25px 20px 25px;
+            }
+        } 
+    }
+}
+@media only screen and (max-width: 380px) {
+    .contenedor-padre-nosotros {
+        .contenedor-padre-nuestro-valores{
+            padding: 115px 0px !important;
+        }
+        .contenedor-padre-conocer-nuestro-servicios{
+            .contenedor-boton-ir-servicios{
+                width: 50%;
+            }
+        } 
+    }
+}

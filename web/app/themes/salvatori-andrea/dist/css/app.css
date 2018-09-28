@@ -17293,7 +17293,8 @@ label.panel-block:hover {
 
 #menu-primary .menu-responsive {
   width: 100%;
-  position: absolute;
+  z-index: 999999999;
+  position: fixed;
   text-align: right;
   top: 15px;
   padding-right: 3%;
@@ -17354,7 +17355,7 @@ label.panel-block:hover {
     color: #fff;
     position: relative;
     right: 0;
-    z-index: 99999999999;
+    z-index: 99999999999999999999;
     margin-top: 18px;
     -webkit-transform: scale(1.8);
             transform: scale(1.8);
@@ -17461,16 +17462,43 @@ label.panel-block:hover {
   width: auto;
 }
 
-.main-cover .content-cover {
-  z-index: 1;
+.main-cover .tarjeta-video-texto {
+  margin-top: 9vh;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  width: 380px;
+  padding: 38px;
+  position: absolute;
+  right: 0;
+  text-align: center;
 }
 
-.main-cover .content-cover .title {
-  font-size: 50px;
+.main-cover .primer-title-tarjeta h4 {
+  text-transform: uppercase;
+  font-size: 2vh;
+  font-weight: 600;
+  padding-bottom: 2vh;
 }
 
-.main-cover .content-cover .excerpt {
-  font-size: 25px;
+.main-cover .contenedor-title-tarjeta {
+  text-align: center;
+}
+
+.main-cover .contenedor-title-tarjeta h2 {
+  font-size: 5.5vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #474747;
 }
 
 footer .containerfooter {
@@ -18479,5 +18507,252 @@ body#tinymce {
 @media only screen and (max-width: 768px) {
   .contenedor-padre-tarjeta-nosotros .contenedor-padre-tres-tarjeta {
     height: 570px !important;
+  }
+}
+
+.contenedor-padre-nosotros .contenedor-titulo-nosotros {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 35px;
+  color: #474747;
+  padding-top: 30px;
+}
+
+.contenedor-padre-nosotros .contenedor-titulo-nosotros h3 {
+  padding-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  color: #474747;
+}
+
+.contenedor-padre-nosotros .contenedor-titulo-nosotros p {
+  padding-top: 10px;
+  font-size: 2.5vh;
+}
+
+.contenedor-padre-nosotros .contenedor-cuadro-primario {
+  padding: 35px 120px !important;
+  position: relative;
+}
+
+.contenedor-padre-nosotros .contenedor-cuadro-primario .contenedor-texto-left {
+  padding: 10px 25px;
+  position: relative;
+  color: #474747;
+}
+
+.contenedor-padre-nosotros .contenedor-cuadro-primario .contenedor-texto-left h3 {
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 0 !important;
+}
+
+.contenedor-padre-nosotros .contenedor-cuadro-secundario {
+  padding: 35px 120px !important;
+  position: relative;
+}
+
+.contenedor-padre-nosotros .contenedor-cuadro-secundario .contenedor-texto-right {
+  padding: 10px 25px;
+  position: relative;
+  color: #474747;
+}
+
+.contenedor-padre-nosotros .contenedor-cuadro-secundario .contenedor-texto-right h3 {
+  text-transform: uppercase;
+  font-size: 3.5vh;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores {
+  background: radial-gradient(circle, #474747, #3c3c3d, #313132, #272729, #1d1d1f);
+  position: relative;
+  height: auto;
+  padding: 115px 100px !important;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores {
+  padding: 0 75px 0px 20px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores .contenedor-hijo-tarjeta-valores {
+  background: white;
+  border-radius: 6px;
+  padding: 30px 36px;
+  width: 290px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores .contenedor-hijo-tarjeta-valores h3 {
+  text-transform: uppercase;
+  font-size: 4vh;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores .contenedor-hijo-tarjeta-valores p {
+  padding-bottom: 35px;
+  font-size: 2vh;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores {
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas {
+  position: relative;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas .tarjeta-descrip-valores {
+  position: relative;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas .tarjeta-descrip-valores .contendor-img-valores {
+  width: 60px;
+  height: 60px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas .tarjeta-descrip-valores h3 {
+  color: white;
+  font-size: 2.5vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas .tarjeta-descrip-valores p {
+  color: white;
+  font-size: 2vh;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios {
+  position: relative;
+  padding: 15px 10px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-title-nuestro-servicio {
+  width: 80%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-title-nuestro-servicio h3 {
+  color: #474747;
+  font-size: 3.5vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-title-nuestro-servicio p {
+  color: #474747;
+  font-size: 2.5vh;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios {
+  text-align: center;
+  padding-bottom: 60px;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios a {
+  padding: 6px 15px;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
+  background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
+  font-weight: 600;
+  font-size: 2.5vh;
+  border-radius: 5px;
+  background-position: center;
+  background-size: 200px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: block;
+}
+
+.contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios a:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas {
+    padding-left: 51px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .contenedor-padre-nosotros .contenedor-padre-nuestro-valores {
+    padding: 115px 50px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores {
+    padding: 0 0px 40px 0px;
+  }
+
+  .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores .contenedor-hijo-tarjeta-valores {
+    margin: 0 auto;
+    padding: 55px 36px;
+  }
+
+  .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas {
+    text-align: center;
+    padding-left: 0px;
+    padding: 0 42px;
+  }
+
+  .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas .tarjeta-descrip-valores .contendor-img-valores {
+    margin: 0 auto;
+  }
+
+  .contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-padre-nosotros .contenedor-cuadro-primario {
+    padding: 35px 30px !important;
+    position: relative;
+  }
+
+  .contenedor-padre-nosotros .contenedor-cuadro-primario .contenedor-texto-left {
+    padding: 10px 25px 20px 25px;
+  }
+
+  .contenedor-padre-nosotros .contenedor-cuadro-secundario {
+    padding: 35px 30px !important;
+    position: relative;
+  }
+
+  .contenedor-padre-nosotros .contenedor-cuadro-secundario .contenedor-texto-right {
+    padding: 10px 25px 20px 25px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .contenedor-padre-nosotros .contenedor-padre-nuestro-valores {
+    padding: 115px 0px !important;
+  }
+
+  .contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios {
+    width: 50%;
   }
 }

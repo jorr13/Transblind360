@@ -58,13 +58,6 @@
               </g>
             </svg>
           </li>
-          <li class="ico-contenedor-redes">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-            <path d="M150,9.92c-74.74,0-135.33,60.59-135.33,135.32c0,74.74,60.59,135.33,135.33,135.33s135.33-60.59,135.33-135.33
-            C285.33,70.51,224.74,9.92,150,9.92z M118.72,215.2V75.28l94.96,69.96L118.72,215.2z"/>
-            </svg>
-          </li>
         </ul>
         <div class="derechos-reservados">
           <h4>copyright . 2018 Transblind360.com all rights reserved</h4>

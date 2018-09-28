@@ -31,7 +31,8 @@
   }
   .menu-responsive {
     width: 100%;
-    position: absolute;
+    z-index: 999999999;
+    position: fixed;
     text-align: right;
     top: 15px;
     padding-right: 3%;
@@ -87,7 +88,7 @@
       color: #fff;
       position: relative;
       right: 0;
-      z-index: 99999999999;
+      z-index: 99999999999999999999;
       margin-top: 18px;
       transform: scale(1.8);
 
