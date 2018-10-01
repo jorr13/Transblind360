@@ -1,0 +1,87 @@
+.contenedor-padre-servicios{
+    position: relative;
+
+    .contenedor-title-servicios{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        padding: 40px;
+
+        h3{
+            font-size: 4.5vh;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-bottom: 2vh;
+        }
+    
+        p{
+            letter-spacing: 2px;
+            font-size: 2.2vh;
+        }
+    }
+    .conte-servicios{
+        padding: 30px 90px 0px 90px;
+        position: relative;
+
+        .contenedor-padre-tarjeta{
+            position: relative;
+            padding-bottom: 80px;
+
+            .contenedortarjeta {
+                height: auto;
+                max-width: 300px;
+                border-radius: 6px;
+                box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+                margin: 0 auto;
+                transition: 0.5s;
+                position: relative;
+                padding: 0;
+
+                &:hover{
+                    transform: scale(1.03);
+                    transition: 0.5s
+                }
+            
+                .contenido-pasos{
+                padding: 30px;
+                height: 280px;
+
+                h2 {
+                    font-size: 3vh;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding-bottom: 8px;
+
+                }
+                p {
+                    font-size: 2vh;
+                    padding-bottom: 15px;
+                }
+                .boton-registrar {
+                    padding: 6px 0px;
+                    position: absolute;
+                    bottom: 24px;
+                    width: 55%;
+                    text-align: center;
+                    color: white;
+                    background: $degradado-amarillo;
+                    font-weight: 600;
+                    font-size: 2vh;
+                    border-radius: 5px;
+                    background-position: center;
+                    background-size: 200px;
+                    transition: 0.5s;
+                    display: block;
+                
+                    &:hover{
+                        transition: 0.5s;
+                        transform: scale(1.03);
+                    }
+                    }
+                }
+            }
+        }
+    }
+}

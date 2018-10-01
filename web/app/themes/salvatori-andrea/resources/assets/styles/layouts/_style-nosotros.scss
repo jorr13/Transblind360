@@ -8,11 +8,13 @@
     padding-top: 30px;
 
     h3 {
-        padding-bottom: 10px;
+        padding-bottom: 25px;
+        padding-top: 25px;
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 3.5vh;
-        color: $gris;  
+        font-size: 5.5vh;
+        color: $gris;
+        letter-spacing: 2px;  
     }
     p {
         padding-top: 10px;
@@ -34,7 +36,7 @@
         font-size: 3.5vh;
         font-weight: 700;
         padding-top: 15px;
-        padding-bottom: 0 !important;
+        padding-bottom: 15px;
       }
     }
   }
@@ -159,7 +161,7 @@
         
         &:hover{
             transition: 0.5s;
-            transform: scale(1.1);
+            transform: scale(1.03);
         }
       }
     }

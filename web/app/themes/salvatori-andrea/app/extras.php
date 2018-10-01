@@ -59,3 +59,23 @@ include_once( get_stylesheet_directory() . '/mu-plugins/acf/acf.php' );
 
 // Adding ACF to the rest API
 include_once( get_stylesheet_directory() . '/mu-plugins/acf-rest/index.php' );
+
+//agregar un post type
+function create_posttype() {
+    register_post_type( 'servicios',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Servicios' ),
+                'singular_name' => __( 'Servicio' )
+            ),
+            'supports' => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+            'public' => true,
+            'publicly_queryable' => true,
+            'has_archive' => false,
+            'menu_icon' => 'dashicons-welcome-write-blog',
+            'rewrite' => array('slug' => 'servicios'),
+        )
+    );
+}
+add_action( 'init', 'create_posttype' );
