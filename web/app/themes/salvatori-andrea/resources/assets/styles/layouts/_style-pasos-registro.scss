@@ -17,7 +17,7 @@
     width: 54%;
 
     h2{
-      font-size: 4.5vh;
+      font-size: 35px;
       font-weight: 700;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -26,7 +26,7 @@
 
     p{
         letter-spacing: 2px;
-        font-size: 2.2vh;
+        font-size: 15px;
     }
   }  
   /* timeline */
@@ -45,7 +45,7 @@
     color: white;
     background: $degradado-amarillo;
     font-weight: 600;
-    font-size: 2.5vh;
+    font-size: 15px;
     border-radius: 5px;
     background-position: center;
     transition: .6s;
@@ -79,19 +79,18 @@
         padding: 30px;
 
         h2 {
-            font-size: 3vh;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding-bottom: 8px;
-
+          font-size: 20px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-bottom: 8px;
         }
         h3 {
-            font-size: 2.5vh;
-            font-weight: 600;
-            padding-bottom: 12px;
+          font-size: 16px;
+          font-weight: 600;
+          padding-bottom: 12px;
         }
         p {
-            font-size: 2vh;
+          font-size: 14px;
         }
       }
     }

@@ -11,13 +11,13 @@
     margin-top: 3vh;
   
     h2{
-      font-size: 5vh;
+      font-size: 30px;
       font-weight: 700;
       text-transform: uppercase;
     }
 
     p{
-      font-size: 2.5vh;
+      font-size: 16px;
       padding-top: 16px;
       padding-bottom: 15px;
     }
@@ -27,15 +27,12 @@
 
     .tarjeta-grande {  
         padding: 30px; 
-        height: 70vh;
+        height: 437px;
         overflow: hidden;
         position: relative;
         transition: 0.5s;
 
       &:hover{
-        background-size: 180% !important;
-        transition: 0.5s;
-
         .contenedor-contenido-servicio {
           height: 180px;
           transition: 0.5s;
@@ -47,7 +44,7 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        height: 72vh;
+        height: 440px;
         width: 105%;
         transform: translate(-50%,-50%);
         text-align: center;
@@ -70,7 +67,7 @@
             position: relative;
 
           .contenedortitle{
-            font-size: 3vh;
+            font-size: 18px;
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing: 2px;
@@ -88,8 +85,8 @@
         }
         .extracto-tarjeta-grande{
             font-weight: 400;
-            font-size: 2vh;
-            padding-bottom: 4vh;
+            font-size: 12px;
+            padding-bottom: 15px;
             padding-top: 20px;
         }
         .contenedor-boton-tarjeta{
@@ -100,7 +97,7 @@
             color: white;
             background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
             font-weight: 600;
-            font-size: 2vh;
+            font-size: 12px;
             border-radius: 5px;
             background-position: center;
             transition: .6s;
@@ -118,7 +115,7 @@
 
       .tarjeta-peque {
         display: inline-block;
-        height: 35vh;
+        height: 219px;
         width: 50%;
         position: relative;
         background-size: cover;
@@ -128,11 +125,8 @@
         transition: 0.5s;
 
         &:hover {
-          background-size: 180% !important;
-          transition: 0.5s;
-
           .contenedor-contenido-servicio-cuatro-tarjeta{
-            height: 200px;
+            height: 225px;
             transition: 0.5s;
           }
         }
@@ -168,7 +162,7 @@
             position: relative;
 
             .contenedortitle-peque {
-              font-size: 2.5vh;
+              font-size: 12px;
               font-weight: 700;
               text-transform: uppercase;
             
@@ -185,7 +179,7 @@
           }
           .extracto-tarjeta-peque{
             line-height: 1.2;
-            font-size: 1.8vh;
+            font-size: 12px;
             padding-bottom: 11px;
             padding-top: 20px;
           }
@@ -197,7 +191,7 @@
               color: white;
               background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
               font-weight: 600;
-              font-size: 2vh;
+              font-size: 12px;
               border-radius: 5px;
               background-position: center;
               transition: .6s;
@@ -218,7 +212,7 @@
       color: black;
       background: white;
       font-weight: 600;
-      font-size: 2.5vh;
+      font-size: 15px;
       border-radius: 5px;
       background-position: center;
       transition: .5s;
@@ -232,14 +226,110 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .contenedor-padre-nuestros-servicios {
+    .contenedor-padre-tarjetas-servicios{
+      .tarjeta-grande {
+        padding: 30px;
+        height: 600px;
+        &::before{
+          height: 600px;
+        }
+      }
+    }
+  } 
+  .cuatrotarjetas {
+    .tarjeta-peque {
+      height: 300px !important;
+      .contenedor-contenido-servicio-cuatro-tarjeta {
+        .contenedor-title-peque{
+          .contenedortitle-peque::after {
+            display: none;
+          }
+        }
+      } 
+    }
+  }
+}
+@media only screen and (max-width: 980px) {
+  .cuatrotarjetas {
+    .tarjeta-peque {
+      .contenedor-contenido-servicio-cuatro-tarjeta {
+        .extracto-tarjeta-peque{
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 876px) {
+
+  .contenedor-padre-nuestros-servicios {
+    .contenedor-padre-tarjetas-servicios{
+      .tarjeta-grande {
+        height: 500px !important;
+        
+        &::before{
+          height: 500px;
+        }
+        .contenedor-contenido-servicio {
+          width: 320px !important;
+        }
+      }
+    } 
+  }
+  .cuatrotarjetas {
+    .tarjeta-peque {
+
+      height: 250px !important;
+
+      .contenedor-contenido-servicio-cuatro-tarjeta {
+        bottom: 30px !important;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .cuatrotarjetas {
     .tarjeta-peque {
       height: 50vh !important;
-
+      .contenedor-contenido-servicio-cuatro-tarjeta {
+        .contenedor-title-peque{
+          .contenedortitle-peque::after {
+            display: block;
+          }
+        }
+        .contenedor-boton-tarjeta-peque{
+          display: block;
+        }
+      }
       .contenedor-contenido-servicio-cuatro-tarjeta {
         width: auto !important;
-        bottom: 170px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cuatrotarjetas {
+    .tarjeta-peque {
+      .contenedor-contenido-servicio-cuatro-tarjeta {
+        .contenedor-title-peque{
+          .contenedortitle-peque::after {
+            display: none;
+          }
+        }
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cuatrotarjetas {
+    .tarjeta-peque {
+      .contenedor-contenido-servicio-cuatro-tarjeta {
+        .contenedor-boton-tarjeta-peque{
+          display: none;
+        }
       }
     }
   }

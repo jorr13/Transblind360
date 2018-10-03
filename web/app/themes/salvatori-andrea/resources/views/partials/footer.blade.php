@@ -6,10 +6,10 @@
           <img src="{{ home_url('app/uploads/2018/09/logo-transblind.png') }} " alt="">
         </div>
           <ul class="paginas-footer">
-            <li class="opciones-paginas"><a href="#">nosotros</a></li>
-            <li class="opciones-paginas"><a href="#">servicios</a></li>
-            <li class="opciones-paginas"><a href="#">Condiciones de servicios</a></li>
-            <li class="opciones-paginas"><a href="#">informacion de privacidad</a></li>
+            <li class="opciones-paginas"><a href="/nosotros/">nosotros</a></li>
+            <li class="opciones-paginas"><a href="/nuestros-servicios/">servicios</a></li>
+            <li class="opciones-paginas"><a href="/condiciones-de-servicio/">Condiciones de servicios</a></li>
+            <li class="opciones-paginas"><a href="/politica-privacidad/">informacion de privacidad</a></li>
           </ul>
       </div>
       <div class="segunda-seccion column is-3">

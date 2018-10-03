@@ -9,7 +9,7 @@
         padding: 40px;
 
         h3{
-            font-size: 4.5vh;
+            font-size: 45px;
             font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -18,7 +18,7 @@
     
         p{
             letter-spacing: 2px;
-            font-size: 2.2vh;
+            font-size: 16px;
         }
     }
     .conte-servicios{
@@ -49,14 +49,14 @@
                 height: 280px;
 
                 h2 {
-                    font-size: 3vh;
+                    font-size: 18px;
                     font-weight: 700;
                     text-transform: uppercase;
                     padding-bottom: 8px;
 
                 }
                 p {
-                    font-size: 2vh;
+                    font-size: 12px;
                     padding-bottom: 15px;
                 }
                 .boton-registrar {
@@ -68,7 +68,7 @@
                     color: white;
                     background: $degradado-amarillo;
                     font-weight: 600;
-                    font-size: 2vh;
+                    font-size: 12px;
                     border-radius: 5px;
                     background-position: center;
                     background-size: 200px;
@@ -84,4 +84,44 @@
             }
         }
     }
+}
+@media only screen and (max-width: 915px){
+    .contenedor-padre-servicios {
+        .conte-servicios{
+            .contenedor-padre-tarjeta{
+                .contenedortarjeta{
+                    .contenido-pasos {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: 880px){
+    .contenedor-padre-servicios {
+        .conte-servicios{
+            .contenedor-padre-tarjeta{
+                .contenedortarjeta{
+                    .contenido-pasos {
+                        height: 320px;
+                    }
+                }
+            }
+        }
+    } 
+}
+@media only screen and (max-width: 768px){
+    .contenedor-padre-servicios {
+        .conte-servicios{
+            padding: 50px;
+            .contenedor-padre-tarjeta{
+                .contenedortarjeta{
+                    .contenido-pasos {
+                        height: 330px;
+                    }
+                }
+            }
+        }
+    } 
 }

@@ -13,7 +13,7 @@
         h2{
             text-align: center;
             padding-bottom: 10px;
-            font-size: 5.5vh;
+            font-size: 45px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -21,7 +21,7 @@
         h3{
             padding-bottom: 30px;
             padding-top: 20px;
-            font-size: 3.5vh;
+            font-size: 25px;
             font-weight: 700; 
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -29,7 +29,7 @@
         h4{
             text-transform: uppercase;
             padding-bottom: 25px;
-            font-size: 2.5vh;
+            font-size: 20px;
             font-weight: 700;
         }
         ul {
@@ -63,7 +63,7 @@
         }
 
         p{
-            font-size: 2.5vh;
+            font-size: 16px;
             text-align: justify;
             padding-top: 40px;
             margin-bottom: 18px;
@@ -88,7 +88,7 @@
             padding-top: 50px;
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 5.5vh;
+            font-size: 45px;
             color: white;
             letter-spacing: 2px;  
         }
@@ -109,7 +109,7 @@
                 color: white;
                 text-transform: uppercase;
                 padding-bottom: 20px;
-                font-size: 2.5vh;
+                font-size: 15px;
                 font-weight: 700;
                 letter-spacing: 2px;
                 height: 75px;
@@ -118,7 +118,7 @@
             p{
                 text-align: justify;
                 color: white;
-                font-size: 2.5vh;
+                font-size: 12px;
             }
         }
     }
@@ -134,7 +134,7 @@
         margin: 0 auto;
 
         h3{
-            font-size: 3.5vh;
+            font-size: 35px;
             font-weight: 700;
             text-transform: uppercase;
             color: $gris;
@@ -152,7 +152,7 @@
           color: white;
           background: $degradado-amarillo;
           font-weight: 600;
-          font-size: 2.5vh;
+          font-size: 15px;
           border-radius: 5px;
           background-position: center;
           background-size: 200px;
@@ -166,4 +166,46 @@
         }
     }
 }
-    
+@media only screen and (max-width: 768px){
+    .servicios-template-default {
+        .has-post-thumbnail {
+            padding: 10px 50px 50px 50px;
+        }
+        .contenedor-tarjetas{
+            text-align: center;
+            .tarjeta-descrip-valores{
+                .contendor-img-valores{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    .contenedor-padre-conocer-nuestro-servicios{
+        position: relative;
+        padding: 0px;
+        .contenedor-title-nuestro-servicio {
+            width: 100%;
+        }
+        .contenedor-boton-ir-servicios {
+            width: 50%;
+        }
+    }
+}
+@media only screen and (max-width: 390px){
+    .servicios-template-default {
+        .has-post-thumbnail { 
+            h2{
+                font-size: 35px;
+            }
+
+        }
+    }
+    .contenedor-padre-detalles-del-servicio{
+        .contenedor-titulo-detalle-servicio {
+            h3{
+                font-size: 30px;
+            }   
+        }
+    }
+}
+   

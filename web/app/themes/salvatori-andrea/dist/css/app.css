@@ -17304,7 +17304,7 @@ label.panel-block:hover {
 #menu-primary .sage-menu .menu-item {
   display: inline-block;
   padding: 0px 12px;
-  font-size: 2vh;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -17485,7 +17485,7 @@ label.panel-block:hover {
 
 .main-cover .primer-title-tarjeta h4 {
   text-transform: uppercase;
-  font-size: 2vh;
+  font-size: 15px;
   font-weight: 600;
   padding-bottom: 2vh;
 }
@@ -17495,10 +17495,30 @@ label.panel-block:hover {
 }
 
 .main-cover .contenedor-title-tarjeta h2 {
-  font-size: 5.5vh;
+  font-size: 45px;
   font-weight: 700;
   text-transform: uppercase;
   color: #474747;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-cover .featured img {
+    min-height: 100%;
+    /* min-width: 100%; */
+    height: 100%;
+    width: auto;
+    max-width: initial;
+    left: 50%;
+    top: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .main-cover .tarjeta-video-texto {
+    bottom: 0;
+    border-bottom: 2px solid #474747;
+  }
 }
 
 footer .containerfooter {
@@ -17541,14 +17561,14 @@ footer .opciones-paginas {
 }
 
 footer .opciones-paginas a {
-  font-size: 2.5vh;
+  font-size: 15px;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 footer .title-contacto-contenedor {
-  font-size: 2.5vh;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 75px;
@@ -17557,7 +17577,7 @@ footer .title-contacto-contenedor {
 footer .derechos-reservados {
   width: 300px;
   min-width: 180px;
-  font-size: 1.8vh;
+  font-size: 11px;
   padding-top: 20vh;
   text-transform: uppercase;
 }
@@ -17580,14 +17600,14 @@ footer .title-con-nosotros {
 
 footer .title-con-nosotros h2 {
   color: #474747;
-  font-size: 4vh;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 footer .parrafo-title {
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 16px;
   margin-top: 2vh;
 }
 
@@ -17626,7 +17646,7 @@ footer .container-boton-enviar {
 }
 
 footer .boton-enviar {
-  font-size: 1.8vh;
+  font-size: 12px;
   text-transform: uppercase;
   font-weight: 700;
   color: white;
@@ -17641,7 +17661,7 @@ footer .parrafo-abajo-footer {
 }
 
 footer .parrafo-abajo-footer h2 {
-  font-size: 3vh;
+  font-size: 25px;
   padding-bottom: 10px;
   font-weight: 600;
   color: #474747;
@@ -17650,18 +17670,18 @@ footer .parrafo-abajo-footer h2 {
 footer .parrafo-primario {
   color: #474747;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 15px;
 }
 
 footer .parrafo-secundario {
   text-transform: uppercase;
-  font-size: 2vh;
+  font-size: 15px;
 }
 
 footer .parrafo-tercero {
   margin-top: 15px;
   text-transform: uppercase;
-  font-size: 1.6vh;
+  font-size: 15px;
   font-weight: 700;
   padding-bottom: 20px;
 }
@@ -17769,7 +17789,7 @@ body#tinymce {
 
 .contenedor-video .primer-title-tarjeta h4 {
   text-transform: uppercase;
-  font-size: 2vh;
+  font-size: 15px;
   font-weight: 600;
   padding-bottom: 2vh;
 }
@@ -17779,7 +17799,7 @@ body#tinymce {
 }
 
 .contenedor-video .contenedor-title-tarjeta h2 {
-  font-size: 4.5vh;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #474747;
@@ -17789,7 +17809,7 @@ body#tinymce {
   padding-top: 3%;
   padding-bottom: 5%;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -17804,7 +17824,7 @@ body#tinymce {
   background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
   background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 15px;
   border-radius: 5px;
   background-position: center;
   background-size: 200px;
@@ -17824,7 +17844,7 @@ body#tinymce {
   color: white;
   background: #474747;
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 15px;
   border-radius: 5px;
   margin-left: 15px;
   -webkit-transition: .5s;
@@ -17870,13 +17890,13 @@ body#tinymce {
 }
 
 .contenedor-padre-nuestros-servicios .contenedor-title-nuestro-servicios h2 {
-  font-size: 5vh;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .contenedor-padre-nuestros-servicios .contenedor-title-nuestro-servicios p {
-  font-size: 2.5vh;
+  font-size: 16px;
   padding-top: 16px;
   padding-bottom: 15px;
 }
@@ -17887,15 +17907,9 @@ body#tinymce {
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande {
   padding: 30px;
-  height: 70vh;
+  height: 437px;
   overflow: hidden;
   position: relative;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande:hover {
-  background-size: 180% !important;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -17911,7 +17925,7 @@ body#tinymce {
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 72vh;
+  height: 440px;
   width: 105%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -17945,7 +17959,7 @@ body#tinymce {
 }
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande .contenedor-contenido-servicio .contenedor-title-grande .contenedortitle {
-  font-size: 3vh;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -17964,8 +17978,8 @@ body#tinymce {
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande .contenedor-contenido-servicio .extracto-tarjeta-grande {
   font-weight: 400;
-  font-size: 2vh;
-  padding-bottom: 4vh;
+  font-size: 12px;
+  padding-bottom: 15px;
   padding-top: 20px;
 }
 
@@ -17979,7 +17993,7 @@ body#tinymce {
   background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
   background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 12px;
   border-radius: 5px;
   background-position: center;
   -webkit-transition: .6s;
@@ -18000,7 +18014,7 @@ body#tinymce {
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .cuatrotarjetas .tarjeta-peque {
   display: inline-block;
-  height: 35vh;
+  height: 219px;
   width: 50%;
   position: relative;
   background-size: cover;
@@ -18011,14 +18025,8 @@ body#tinymce {
   transition: .5s;
 }
 
-.contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .cuatrotarjetas .tarjeta-peque:hover {
-  background-size: 180% !important;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .cuatrotarjetas .tarjeta-peque:hover .contenedor-contenido-servicio-cuatro-tarjeta {
-  height: 200px;
+  height: 225px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -18066,7 +18074,7 @@ body#tinymce {
 }
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .contenedor-title-peque .contenedortitle-peque {
-  font-size: 2.5vh;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -18084,7 +18092,7 @@ body#tinymce {
 
 .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .extracto-tarjeta-peque {
   line-height: 1.2;
-  font-size: 1.8vh;
+  font-size: 12px;
   padding-bottom: 11px;
   padding-top: 20px;
 }
@@ -18099,7 +18107,7 @@ body#tinymce {
   background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
   background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 12px;
   border-radius: 5px;
   background-position: center;
   -webkit-transition: .6s;
@@ -18118,7 +18126,7 @@ body#tinymce {
   color: black;
   background: white;
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 15px;
   border-radius: 5px;
   background-position: center;
   -webkit-transition: .5s;
@@ -18132,14 +18140,80 @@ body#tinymce {
   transition: .5s;
 }
 
+@media only screen and (max-width: 1024px) {
+  .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande {
+    padding: 30px;
+    height: 600px;
+  }
+
+  .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande::before {
+    height: 600px;
+  }
+
+  .cuatrotarjetas .tarjeta-peque {
+    height: 300px !important;
+  }
+
+  .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .contenedor-title-peque .contenedortitle-peque::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .extracto-tarjeta-peque {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande {
+    height: 500px !important;
+  }
+
+  .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande::before {
+    height: 500px;
+  }
+
+  .contenedor-padre-nuestros-servicios .contenedor-padre-tarjetas-servicios .tarjeta-grande .contenedor-contenido-servicio {
+    width: 320px !important;
+  }
+
+  .cuatrotarjetas .tarjeta-peque {
+    height: 250px !important;
+  }
+
+  .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta {
+    bottom: 30px !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .cuatrotarjetas .tarjeta-peque {
     height: 50vh !important;
   }
 
+  .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .contenedor-title-peque .contenedortitle-peque::after {
+    display: block;
+  }
+
+  .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .contenedor-boton-tarjeta-peque {
+    display: block;
+  }
+
   .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta {
     width: auto !important;
-    bottom: 170px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .contenedor-title-peque .contenedortitle-peque::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cuatrotarjetas .tarjeta-peque .contenedor-contenido-servicio-cuatro-tarjeta .contenedor-boton-tarjeta-peque {
+    display: none;
   }
 }
 
@@ -18171,7 +18245,7 @@ body#tinymce {
 }
 
 .noticias .container-title h2 {
-  font-size: 4.5vh;
+  font-size: 35px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -18180,7 +18254,7 @@ body#tinymce {
 
 .noticias .container-title p {
   letter-spacing: 2px;
-  font-size: 2.2vh;
+  font-size: 15px;
 }
 
 .noticias .barra-vertical {
@@ -18199,7 +18273,7 @@ body#tinymce {
   background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
   background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 15px;
   border-radius: 5px;
   background-position: center;
   -webkit-transition: .6s;
@@ -18244,20 +18318,20 @@ body#tinymce {
 }
 
 .noticias .timeline-item .contenedortarjeta .contenido-pasos h2 {
-  font-size: 3vh;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 8px;
 }
 
 .noticias .timeline-item .contenedortarjeta .contenido-pasos h3 {
-  font-size: 2.5vh;
+  font-size: 16px;
   font-weight: 600;
   padding-bottom: 12px;
 }
 
 .noticias .timeline-item .contenedortarjeta .contenido-pasos p {
-  font-size: 2vh;
+  font-size: 14px;
 }
 
 .noticias .timeline-item .diamante {
@@ -18396,13 +18470,13 @@ body#tinymce {
 }
 
 .sobre-nosotros .contenedor-titulo-principal h3 {
-  font-size: 5vh;
+  font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .sobre-nosotros .contenedor-titulo-principal p {
-  font-size: 2.5vh;
+  font-size: 18px;
   padding-top: 16px;
   padding-bottom: 10vh;
 }
@@ -18428,14 +18502,14 @@ body#tinymce {
 
 .sobre-nosotros .contenedor-padre-tarjeta-nosotros .contenedor-padre-tres-tarjeta .contenedor-tres-tarjeta .tres-tarjeta {
   text-align: center;
-  height: 15vh;
+  height: 120px;
   background: radial-gradient(circle, #474747, #3c3c3d, #313132, #272729, #1d1d1f);
   color: white;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
-  padding-top: 33px;
+  padding-top: 48px;
   font-weight: 600;
-  font-size: 2.2vh;
+  font-size: 16px;
   text-transform: uppercase;
   -webkit-transition: 1s;
   transition: 1s;
@@ -18474,12 +18548,12 @@ body#tinymce {
 
 .sobre-nosotros .contenedor-padre-tarjeta-nosotros .contenedor-padre-tres-tarjeta .contenedor-padre-info-nosotros .contenedor-info-nosotros h3 {
   padding-bottom: 35px;
-  font-size: 3.5vh;
+  font-size: 25px;
   font-weight: 500;
 }
 
 .sobre-nosotros .contenedor-padre-tarjeta-nosotros .contenedor-padre-tres-tarjeta .contenedor-padre-info-nosotros .contenedor-info-nosotros p {
-  font-size: 2.2vh;
+  font-size: 13px;
   padding-bottom: 40px;
 }
 
@@ -18488,7 +18562,7 @@ body#tinymce {
   color: black;
   background: white;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 12px;
   border-radius: 5px;
   background-position: center;
   text-transform: uppercase;
@@ -18524,14 +18598,14 @@ body#tinymce {
   padding-top: 25px;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 5.5vh;
+  font-size: 45px;
   color: #474747;
   letter-spacing: 2px;
 }
 
 .contenedor-padre-nosotros .contenedor-titulo-nosotros p {
   padding-top: 10px;
-  font-size: 2.5vh;
+  font-size: 15px;
 }
 
 .contenedor-padre-nosotros .contenedor-cuadro-primario {
@@ -18547,7 +18621,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-cuadro-primario .contenedor-texto-left h3 {
   text-transform: uppercase;
-  font-size: 3.5vh;
+  font-size: 22px;
   font-weight: 700;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -18566,7 +18640,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-cuadro-secundario .contenedor-texto-right h3 {
   text-transform: uppercase;
-  font-size: 3.5vh;
+  font-size: 22px;
   font-weight: 700;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -18592,7 +18666,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores .contenedor-hijo-tarjeta-valores h3 {
   text-transform: uppercase;
-  font-size: 4vh;
+  font-size: 22px;
   font-weight: 700;
   padding-top: 15px;
   padding-bottom: 25px;
@@ -18600,7 +18674,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-tarjeta-valores .contenedor-hijo-tarjeta-valores p {
   padding-bottom: 35px;
-  font-size: 2vh;
+  font-size: 15px;
 }
 
 .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores {
@@ -18623,7 +18697,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas .tarjeta-descrip-valores h3 {
   color: white;
-  font-size: 2.5vh;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 10px;
@@ -18632,7 +18706,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-padre-nuestro-valores .contenedor-padre-descrip-valores .contenedor-tarjetas .tarjeta-descrip-valores p {
   color: white;
-  font-size: 2vh;
+  font-size: 12px;
 }
 
 .contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios {
@@ -18650,7 +18724,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-title-nuestro-servicio h3 {
   color: #474747;
-  font-size: 3.5vh;
+  font-size: 45px;
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 30px;
@@ -18660,7 +18734,7 @@ body#tinymce {
 
 .contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-title-nuestro-servicio p {
   color: #474747;
-  font-size: 2.5vh;
+  font-size: 20px;
 }
 
 .contenedor-padre-nosotros .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios {
@@ -18676,7 +18750,7 @@ body#tinymce {
   background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
   background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 15px;
   border-radius: 5px;
   background-position: center;
   background-size: 200px;
@@ -18772,7 +18846,7 @@ body#tinymce {
 }
 
 .contenedor-padre-servicios .contenedor-title-servicios h3 {
-  font-size: 4.5vh;
+  font-size: 45px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -18781,7 +18855,7 @@ body#tinymce {
 
 .contenedor-padre-servicios .contenedor-title-servicios p {
   letter-spacing: 2px;
-  font-size: 2.2vh;
+  font-size: 16px;
 }
 
 .contenedor-padre-servicios .conte-servicios {
@@ -18820,14 +18894,14 @@ body#tinymce {
 }
 
 .contenedor-padre-servicios .conte-servicios .contenedor-padre-tarjeta .contenedortarjeta .contenido-pasos h2 {
-  font-size: 3vh;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   padding-bottom: 8px;
 }
 
 .contenedor-padre-servicios .conte-servicios .contenedor-padre-tarjeta .contenedortarjeta .contenido-pasos p {
-  font-size: 2vh;
+  font-size: 12px;
   padding-bottom: 15px;
 }
 
@@ -18841,7 +18915,7 @@ body#tinymce {
   background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
   background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 12px;
   border-radius: 5px;
   background-position: center;
   background-size: 200px;
@@ -18855,6 +18929,28 @@ body#tinymce {
   transition: .5s;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+@media only screen and (max-width: 915px) {
+  .contenedor-padre-servicios .conte-servicios .contenedor-padre-tarjeta .contenedortarjeta .contenido-pasos {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .contenedor-padre-servicios .conte-servicios .contenedor-padre-tarjeta .contenedortarjeta .contenido-pasos {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-padre-servicios .conte-servicios {
+    padding: 50px;
+  }
+
+  .contenedor-padre-servicios .conte-servicios .contenedor-padre-tarjeta .contenedortarjeta .contenido-pasos {
+    height: 330px;
+  }
 }
 
 .servicios-template-default .has-post-thumbnail {
@@ -18873,7 +18969,7 @@ body#tinymce {
 .servicios-template-default .has-post-thumbnail h2 {
   text-align: center;
   padding-bottom: 10px;
-  font-size: 5.5vh;
+  font-size: 45px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -18882,7 +18978,7 @@ body#tinymce {
 .servicios-template-default .has-post-thumbnail h3 {
   padding-bottom: 30px;
   padding-top: 20px;
-  font-size: 3.5vh;
+  font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -18891,7 +18987,7 @@ body#tinymce {
 .servicios-template-default .has-post-thumbnail h4 {
   text-transform: uppercase;
   padding-bottom: 25px;
-  font-size: 2.5vh;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -18928,7 +19024,7 @@ body#tinymce {
 }
 
 .servicios-template-default .has-post-thumbnail p {
-  font-size: 2.5vh;
+  font-size: 16px;
   text-align: justify;
   padding-top: 40px;
   margin-bottom: 18px;
@@ -18954,7 +19050,7 @@ body#tinymce {
   padding-top: 50px;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 5.5vh;
+  font-size: 45px;
   color: white;
   letter-spacing: 2px;
 }
@@ -18980,7 +19076,7 @@ body#tinymce {
   color: white;
   text-transform: uppercase;
   padding-bottom: 20px;
-  font-size: 2.5vh;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
   height: 75px;
@@ -18990,7 +19086,7 @@ body#tinymce {
 .contenedor-padre-detalles-del-servicio .contenedor-tarjetas .tarjeta-descrip-valores p {
   text-align: justify;
   color: white;
-  font-size: 2.5vh;
+  font-size: 12px;
 }
 
 .contenedor-padre-conocer-nuestro-servicios {
@@ -19005,7 +19101,7 @@ body#tinymce {
 }
 
 .contenedor-padre-conocer-nuestro-servicios .contenedor-title-nuestro-servicio h3 {
-  font-size: 3.5vh;
+  font-size: 35px;
   font-weight: 700;
   text-transform: uppercase;
   color: #474747;
@@ -19026,7 +19122,7 @@ body#tinymce {
   background: -webkit-gradient(linear, left top, right top, from(#775218), color-stop(50%, #d0a238), to(#775218));
   background: linear-gradient(to right, #775218 0%, #d0a238 50%, #775218 100%);
   font-weight: 600;
-  font-size: 2.5vh;
+  font-size: 15px;
   border-radius: 5px;
   background-position: center;
   background-size: 200px;
@@ -19040,4 +19136,189 @@ body#tinymce {
   transition: .5s;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+@media only screen and (max-width: 768px) {
+  .servicios-template-default .has-post-thumbnail {
+    padding: 10px 50px 50px 50px;
+  }
+
+  .servicios-template-default .contenedor-tarjetas {
+    text-align: center;
+  }
+
+  .servicios-template-default .contenedor-tarjetas .tarjeta-descrip-valores .contendor-img-valores {
+    margin: 0 auto;
+  }
+
+  .contenedor-padre-conocer-nuestro-servicios {
+    position: relative;
+    padding: 0px;
+  }
+
+  .contenedor-padre-conocer-nuestro-servicios .contenedor-title-nuestro-servicio {
+    width: 100%;
+  }
+
+  .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .servicios-template-default .has-post-thumbnail h2 {
+    font-size: 35px;
+  }
+
+  .contenedor-padre-detalles-del-servicio .contenedor-titulo-detalle-servicio h3 {
+    font-size: 30px;
+  }
+}
+
+.contenedor-padre-politicas-privacidad article {
+  padding: 50px 150px 80px 150px;
+  position: relative;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content h2 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content h3 {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content h4 {
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content p {
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content ul {
+  border-left: 5px solid #474747;
+  list-style: none;
+  list-style-type: circle;
+  padding: 40px 50px;
+  -webkit-box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+          box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content ul li {
+  padding: 5px 0px;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content blockquote {
+  border-left: 5px solid #474747;
+  list-style: none;
+  list-style-type: circle;
+  padding: 30px 50px;
+  -webkit-box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+          box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.contenedor-padre-politicas-privacidad article .entry-content blockquote p {
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-padre-politicas-privacidad article {
+    padding: 10px 50px 50px 50px;
+  }
+}
+
+.contenedor-padre-condiciones-servicio article {
+  padding: 50px 150px 80px 150px;
+  position: relative;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content h2 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content h3 {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content h4 {
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content p {
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content ul {
+  border-left: 5px solid #474747;
+  list-style: none;
+  list-style-type: circle;
+  padding: 40px 50px;
+  -webkit-box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+          box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content ul li {
+  padding: 5px 0px;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content blockquote {
+  border-left: 5px solid #474747;
+  list-style: none;
+  list-style-type: circle;
+  padding: 30px 50px;
+  -webkit-box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+          box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.contenedor-padre-condiciones-servicio article .entry-content blockquote p {
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-padre-politicas-privacidad article {
+    padding: 10px 50px 50px 50px;
+  }
 }

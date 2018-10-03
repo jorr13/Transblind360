@@ -19,10 +19,10 @@
       <h3>Mision</h3>
       <p>Ofrecer servicios y productos para el manejo integral de valores y riesgos asociados, con seguridad, confort y respaldo, en un marco de principios éticos, y a través del mejoramiento continuo, agregar valor a nuestros clientes.</p>
     </div>
-    <div class="contenedor-img-right column is-6" style="background: url('{{ home_url('app/uploads/2018/09/portada.jpg') }} '); background-repeat: no-repeat; background-size: cover; height: 400px;"></div>  
+    <div class="contenedor-img-right column is-6" style="background: url('{{ home_url('app/uploads/2018/09/portada.jpg') }} '); border-radius: 6px; background-repeat: no-repeat; background-size: cover; height: 400px;"></div>  
   </div>
   <div class="contenedor-cuadro-secundario columns is-multiline is-paddingless animate fadeInUp">
-    <div class="contenedor-img-left column is-6" style="background: url('{{ home_url('app/uploads/2018/09/portada.jpg') }} '); background-repeat: no-repeat; background-size: cover;  height: 400px;"></div>
+    <div class="contenedor-img-left column is-6" style="background: url('{{ home_url('app/uploads/2018/09/portada.jpg') }} ');border-radius: 6px; background-repeat: no-repeat; background-size: cover;  height: 400px;"></div>
     <div class="contenedor-texto-right column is-6">
       <h3>Vision</h3>
       <p>Ser líderes a escala nacional, saber manejar los posibles riesgos asociados a los servicios; sustentados en la capacitación y mística de nuestro personal, la calidad de los servicios, que permiten garantizar nuestra solidez.</p>
