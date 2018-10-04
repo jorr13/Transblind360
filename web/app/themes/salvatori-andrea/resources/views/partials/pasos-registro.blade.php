@@ -12,13 +12,20 @@
             <div class="diamante">
                 <div class="rombo"></div>
             </div>
+
             <div class="contenedortarjeta animate fadeInUp">
-                <div class="img-noticias" style="background:url('app/uploads/2018/09/aeropuerto.jpg'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
+                @if(have_rows('paso_uno', 61))
+                {{-- loop through the rows of data --}}
+                @while (have_rows('paso_uno', 61))@php(the_row())
+                <div class="img-noticias" style="background:url('{{ get_sub_field('imagen_uno') }}'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
                 <div class="contenido-pasos ">
-                    <h2 class="titulo">Paso 1</h2>
-                    <h3 class="titulo">Registrate en nuestro sistema de usuarios</h3>
-                    <p class="resumen">Para acceder, haz click en el boton de registro. </p>   
+                    <h2 class="titulo">{{ get_sub_field('numero_paso_uno') }}</h2>
+                    <h3 class="titulo">{{ get_sub_field('titulo_del_paso_uno') }}</h3>
+                    <p class="resumen">{{ get_sub_field('instruccion_del_paso_uno') }}</p>   
                 </div> 
+                @endwhile
+                @else      
+                @endif
             </div>
 
         </div>
@@ -29,12 +36,18 @@
                 <div class="rombo"></div>
             </div>
             <div class="contenedortarjeta animate fadeInUp">
-                <div class="img-noticias" style="background:url('app/uploads/2018/09/aeropuerto.jpg'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
-                <div class="contenido-pasos">
-                    <h2 class="titulo">Paso 2</h2>
-                    <h3 class="titulo">Solicita un servicio</h3>
-                    <p class="resumen">Escoge el servicio que mejor se adapte a lo que estas buscando, ajustalo a lo que necesitas y envia la solicitud.</p>   
-                </div> 
+                    @if(have_rows('paso_dos', 61))
+                    {{-- loop through the rows of data --}}
+                    @while (have_rows('paso_dos', 61))@php(the_row())
+                    <div class="img-noticias" style="background:url('{{ get_sub_field('imagen_dos') }}'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
+                    <div class="contenido-pasos ">
+                        <h2 class="titulo">{{ get_sub_field('numero_paso_dos') }}</h2>
+                        <h3 class="titulo">{{ get_sub_field('titulo_del_paso_dos') }}</h3>
+                        <p class="resumen">{{ get_sub_field('instruccion_del_paso_dos') }}</p>   
+                    </div> 
+                    @endwhile
+                    @else      
+                    @endif
             </div>
         </div>
 
@@ -44,12 +57,18 @@
                 <div class="rombo"></div>
             </div>
             <div class="contenedortarjeta animate fadeInUp">
-                <div class="img-noticias" style="background:url('app/uploads/2018/09/aeropuerto.jpg'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
-                <div class="contenido-pasos">
-                    <h2 class="titulo">Paso 3</h2>
-                    <h3 class="titulo">Nos comunicamos contigo</h3>
-                    <p class="resumen">Confirmamos los detalles del servicio, metodos de pago, y le hacemos llegar la ficha tecnica del servicio solicitado.</p>   
-                </div> 
+                    @if(have_rows('paso_tres', 61))
+                    {{-- loop through the rows of data --}}
+                    @while (have_rows('paso_tres', 61))@php(the_row())
+                    <div class="img-noticias" style="background:url('{{ get_sub_field('imagen_tres') }}'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
+                    <div class="contenido-pasos ">
+                        <h2 class="titulo">{{ get_sub_field('numero_paso_tres') }}</h2>
+                        <h3 class="titulo">{{ get_sub_field('titulo_del_paso_tres') }}</h3>
+                        <p class="resumen">{{ get_sub_field('instruccion_del_paso_tres') }}</p>   
+                    </div> 
+                    @endwhile
+                    @else      
+                    @endif
             </div>
         </div>
     </div>

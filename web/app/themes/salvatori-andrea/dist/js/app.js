@@ -10988,16 +10988,43 @@ Vue.component('posts-loop', __webpack_require__(370));
 Vue.component('pages-loop', __webpack_require__(376));
 
 Barba.Dispatcher.on('transitionCompleted', function (currentStatus, oldStatus, container) {
-    var app = new Vue({
-        el: '#app'
-    });
-    wow.init();
-    var sync = setInterval(function () {
-        wow.sync();
-    }, 2000);
-    setTimeout(function () {
-        clearInterval(sync);
-    }, 15000);
+  var app = new Vue({
+    el: '#app'
+  });
+  wow.init();
+  var sync = setInterval(function () {
+    wow.sync();
+  }, 2000);
+  setTimeout(function () {
+    clearInterval(sync);
+  }, 15000);
+
+  $('#que-hacemos').click(function (e) {
+    e.preventDefault();
+    $('#mision, #vision, #motivacion').fadeOut();
+    $('#mision').fadeIn();
+  });
+  $('#porque').click(function (e) {
+    e.preventDefault();
+    $('#mision, #vision, #motivacion').fadeOut();
+    $('#vision').fadeIn();
+  });
+  $('#motiva').click(function (e) {
+    e.preventDefault();
+    $('#mision, #vision, #motivacion').fadeOut();
+    $('#motivacion').fadeIn();
+  });
+
+  $('.navbar-burger').click(function (e) {
+    e.preventDefault();
+    $('.menu-responsive').fadeToggle();
+    $('.navbar-burger').toggleClass('is-active');
+  });
+  $(".menu-item-24 > a").click(function (e) {
+    e.preventDefault();
+    $('.menu-responsive').css("display", "none");
+    $('html, body').animate({ scrollTop: $("#footer-enviar").offset().top - 100 }, 1500);
+  });
 });
 
 /***/ }),
@@ -11342,6 +11369,7 @@ window.wow = new __WEBPACK_IMPORTED_MODULE_0_wowjs__["WOW"]({
   mobile: true, // default
   live: true // default
 });
+
 //Set up transition
 __WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {
   var transEffect = __WEBPACK_IMPORTED_MODULE_1_barba_js___default.a.BaseTransition.extend({
@@ -11369,35 +11397,6 @@ __WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {
     return transEffect;
   };
   __WEBPACK_IMPORTED_MODULE_1_barba_js___default.a.Pjax.start();
-});
-
-__WEBPACK_IMPORTED_MODULE_2_jquery___default()('document').ready(function () {
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#que-hacemos').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#mision, #vision, #motivacion').fadeOut();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#mision').fadeIn();
-  });
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#porque').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#mision, #vision, #motivacion').fadeOut();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#vision').fadeIn();
-  });
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#motiva').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#mision, #vision, #motivacion').fadeOut();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('#motivacion').fadeIn();
-  });
-
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.navbar-burger').click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.menu-responsive').fadeToggle();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.navbar-burger').toggleClass('is-active');
-  });
-  __WEBPACK_IMPORTED_MODULE_2_jquery___default()(".menu-item-24 > a").click(function (e) {
-    e.preventDefault();
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('.menu-responsive').css("display", "none");
-    __WEBPACK_IMPORTED_MODULE_2_jquery___default()('html, body').animate({ scrollTop: __WEBPACK_IMPORTED_MODULE_2_jquery___default()("#footer-enviar").offset().top - 100 }, 1500);
-  });
 });
 
 /***/ }),

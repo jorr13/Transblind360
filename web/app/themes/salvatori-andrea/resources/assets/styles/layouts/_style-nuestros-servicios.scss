@@ -126,7 +126,7 @@
 
         &:hover {
           .contenedor-contenido-servicio-cuatro-tarjeta{
-            height: 225px;
+            height: 220px;
             transition: 0.5s;
           }
         }
@@ -292,7 +292,7 @@
 @media only screen and (max-width: 768px) {
   .cuatrotarjetas {
     .tarjeta-peque {
-      height: 50vh !important;
+      height: 250 !important;
       .contenedor-contenido-servicio-cuatro-tarjeta {
         .contenedor-title-peque{
           .contenedortitle-peque::after {

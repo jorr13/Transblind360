@@ -18,6 +18,8 @@ window.Barba = Barba;
     live:         true        // default
 }
 )
+
+
   //Set up transition
 $('document').ready(function(){
     var transEffect = 
@@ -42,34 +44,5 @@ $('document').ready(function(){
       return transEffect;
     }
     Barba.Pjax.start();
-  });
-
-$('document').ready(function(){
-  $('#que-hacemos').click(function (e) { 
-    e.preventDefault();
-    $('#mision, #vision, #motivacion').fadeOut();
-    $('#mision').fadeIn();        
-  });
-  $('#porque').click(function (e) { 
-    e.preventDefault();
-    $('#mision, #vision, #motivacion').fadeOut();
-    $('#vision').fadeIn();        
-  });
-  $('#motiva').click(function (e) { 
-    e.preventDefault();
-    $('#mision, #vision, #motivacion').fadeOut();
-    $('#motivacion').fadeIn();        
-  });
-
-  $('.navbar-burger').click(function (e) { 
-    e.preventDefault();
-    $('.menu-responsive').fadeToggle();
-    $('.navbar-burger').toggleClass('is-active');
-  });
-  $(".menu-item-24 > a").click(function (e) { 
-    e.preventDefault();
-    $('.menu-responsive').css("display", "none");
-    $('html, body').animate({ scrollTop: ($("#footer-enviar").offset().top) -100 }, 1500); 
-  });
-
+  
 });

@@ -74,6 +74,7 @@ class App extends Controller
             ];
         }, $servicios);
     }
-
-
 }
+add_post_type_support( 'page', 'excerpt' );
+
+

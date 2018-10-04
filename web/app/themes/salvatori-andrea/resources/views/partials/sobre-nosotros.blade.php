@@ -17,23 +17,51 @@
                 </a>
             </div>
             <div class="contenedor-padre-info-nosotros column is-12">
+
+
+                @if(have_rows('contenido_mision', 82))
+                {{-- loop through the rows of data --}}
+                @while (have_rows('contenido_mision', 82))@php(the_row())
                 <div class="contenedor-info-nosotros" id="mision" style="display:block;">
-                    <h3>Mision</h3>
-                    <p>Ofrecer servicios y productos para le manejo integral de valores y riesgos asociados, con seguridad, confort y respaldo, en un marco de principios eticos, y a travez del mejoramiento continuo, agregar valor a nuestros clientes </p>
-                    <a href="" class="boton-sobre-nosotros">mas sobre nosotros</a>
+                    <h3>{{ get_sub_field('titulo_mision') }}</h3>
+                    <p>{{ get_sub_field('extracto_de_la_mision') }} </p>
+                    <a href="/nosotros/" class="boton-sobre-nosotros">mas sobre nosotros</a>
                 </div>
+                @endwhile 
+                @else      
+                @endif
+
+
+                @if(have_rows('contenido_vision', 82))
+                {{-- loop through the rows of data --}}
+                @while (have_rows('contenido_vision', 82))@php(the_row())
                 <div class="contenedor-info-nosotros" id="vision" style="display:none;">
-                    <h3>Vision</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis at ex quis enim. Ex, eius dolorum pariatur inventore, vitae eveniet distinctio accusantium deleniti tenetur qui modi commodi vel laudantium.</p>
-                    <a href="" class="boton-sobre-nosotros">mas sobre nosotros</a>
+                    <h3>{{ get_sub_field('titulo_vision') }}</h3>
+                    <p>{{ get_sub_field('extracto_de_la_vision') }}</p>
+                    <a href="/nosotros/" class="boton-sobre-nosotros">mas sobre nosotros</a>
                 </div>
+                @endwhile 
+                @else      
+                @endif
+
+                @if(have_rows('contenido_motivacion', 82))
+                {{-- loop through the rows of data --}}
+                @while (have_rows('contenido_motivacion', 82))@php(the_row())
                 <div class="contenedor-info-nosotros" id="motivacion" style="display:none;">
-                    <h3>Motivacion</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nam dolorem iusto quae, aperiam vel enim eos inventore quaerat! Reiciendis obcaecati inventore sit iusto veniam recusandae corrupti maiores laboriosam iste!Sit voluptatem fugit id cupiditate blanditiis eveniet. Fuga, exercitationem nostrum? Voluptates aliquam quod consequuntur enim similique minus unde autem fugit! Quas totam adipisci nesciunt accusamus quis vero explicabo magnam debitis.</p>
-                    <a href="" class="boton-sobre-nosotros">mas sobre nosotros</a>
+                    <h3>{{ get_sub_field('titulo_motivacion') }}</h3>
+                    <p>{{ get_sub_field('extracto_de_la_motivacion') }}</p>
+                    <a href="/nosotros/" class="boton-sobre-nosotros">mas sobre nosotros</a>
                 </div>
+                @endwhile 
+                @else      
+                @endif
             </div>
         </div>
-        <div class="contenedor-padre-imagen-nosotros column is-5" style="background:url('app/uploads/2018/09/aeropuerto.jpg'); background-size: cover; background-repeat: no-repeat; border: 1px solid white; height: 420px;"></div>
+        
+
+
+        <div class="contenedor-padre-imagen-nosotros column is-5" style="background:url( {{ get_field('imagen_home_nosotros', 82 )}} ); background-size: cover; background-repeat: no-repeat; border: 1px solid white; height: 420px;"></div>
+
+        
     </div>
 </div>

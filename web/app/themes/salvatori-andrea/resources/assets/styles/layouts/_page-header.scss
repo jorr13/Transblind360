@@ -34,7 +34,7 @@
         padding: 38px;
         position: absolute;
         right: 0;
-        text-align: center;
+        text-align: left;
       }
       .primer-title-tarjeta {
         h4 {
@@ -46,7 +46,8 @@
       }
     
       .contenedor-title-tarjeta {
-        text-align: center;
+        text-align: left;
+        margin-left: -2px;
       }
     
       .contenedor-title-tarjeta {

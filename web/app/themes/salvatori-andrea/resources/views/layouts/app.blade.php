@@ -4,7 +4,6 @@
 <body @php body_class() @endphp>
 @php do_action('get_header') @endphp
 <div id="app" role="document">
-    
     <div id="barba-wrapper">
         <div class="barba-container">
         @include('partials.header')
