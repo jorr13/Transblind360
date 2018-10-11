@@ -1,10 +1,11 @@
 .noticias {
     margin: 0 auto;
-    padding: 46px 30px;
+    padding: 46px 30px 60px;
     display: flex;
     flex-direction: column;
     position: relative;
     height: auto;
+
   a {
     color: black;
   }
@@ -12,8 +13,8 @@
   .container-title {
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 6vh;
-    padding-top: 10vh;
+    padding-bottom: 30px;
+    padding-top: 30px;
     width: 54%;
 
     h2{
@@ -48,13 +49,13 @@
     font-size: 15px;
     border-radius: 5px;
     background-position: center;
-    transition: .6s;
     background-size: 200px;
     transition: 0.5s;
+    letter-spacing: 2px;
 
     &:hover{
       transition: 0.5s;
-      transform: scale(1.1);
+      transform: scale(1.03);
     }
   }
   
@@ -66,12 +67,12 @@
         height: auto;
         width: 270px;
         border-radius: 6px;
-        box-shadow: 0 7px 21px rgba(0, 0, 0, .5);
+        box-shadow: 0 7px 21px rgba(0, 0, 0, .2);
         margin: 0 auto;
         transition: 0.5s;
 
         &:hover{
-          transform: scale(1.1);
+          transform: scale(1.03);
           transition: 0.5s
         }
     
@@ -83,6 +84,7 @@
           font-weight: 700;
           text-transform: uppercase;
           padding-bottom: 8px;
+          letter-spacing: 2px;
         }
         h3 {
           font-size: 16px;
@@ -135,6 +137,15 @@
     
     .container-title{
       width: 100%;
+      h2{
+        font-size: 28px !important ;
+      }
+      p{
+        font-size:12px !important;
+      }
+    }
+    .boton-registrar{
+      margin-top: 30px !important;
     }
 
     .timeline-item {
@@ -164,10 +175,6 @@
     }
   
     .boton {
-      width: 208px !important;
-    }
-  
-    .boton:hover {
       width: 208px !important;
     }
   }
@@ -217,5 +224,10 @@
     .boton:hover {
       width: 208px !important;
     }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .noticias {
+    padding: 45px 0px 60px;
   }
 }

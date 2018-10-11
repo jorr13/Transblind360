@@ -75,6 +75,7 @@ function create_posttype() {
             'has_archive' => false,
             'menu_icon' => 'dashicons-welcome-write-blog',
             'rewrite' => array('slug' => 'servicios'),
+            'taxonomies' => array( 'category' ),
         )
     );
 }

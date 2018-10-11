@@ -48,7 +48,7 @@
       @if(have_rows('nuestros_valores', 12))
         @while (have_rows('nuestros_valores', 12))@php(the_row())
           <div class="contenedor-hijo-tarjeta-valores">
-              <h3>{{ get_sub_field('titulo_nuestro_valores') }}</h3>
+              <span>{{ get_sub_field('titulo_nuestro_valores') }}</span>
               <p>{{ get_sub_field('extracto_nuestros_valores') }}</p>   
           </div>
         @endwhile 
@@ -78,7 +78,7 @@
 
   <div class="contenedor-padre-conocer-nuestro-servicios animate fadeInUp">
     <div class="contenedor-title-nuestro-servicio ">
-      <h3>¡Conozca nuestros servicios!</h3>
+      <h4>¡Conozca nuestros servicios!</h4>
       <p>Nuestra prioridad es alcanzar la excelencia en todos los servicios, poniendo atencion a los mas pequeños detalles en el control de la calidad de sus procesos y equipos, logrando una experiencia placentera para nuestros pasajeros</p>
     </div>
     <div class="contenedor-boton-ir-servicios">

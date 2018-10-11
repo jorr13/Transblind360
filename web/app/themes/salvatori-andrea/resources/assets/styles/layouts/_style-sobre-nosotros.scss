@@ -39,14 +39,14 @@
 
         .tres-tarjeta {
             text-align: center;
-            height: 120px;
+            height: 70px;
             background: $degradado-circulo;
             color: white;
             border-right: 1px solid white;
             border-bottom: 1px solid white;
-            padding-top: 48px;
+            padding: 25px;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 12px;
             text-transform: uppercase;
             transition: 1s;
             position: relative;
@@ -85,6 +85,7 @@
             p{
                 font-size: 13px;
                 padding-bottom: 40px;
+                padding-right: 40px;
             } 
         }
         .boton-sobre-nosotros{    
@@ -110,10 +111,51 @@
   }
 }
 @media only screen and (max-width: 768px) {
-  .contenedor-padre-tarjeta-nosotros{
-
-    .contenedor-padre-tres-tarjeta{
-        height: 570px !important;
+  .sobre-nosotros{
+    .contenedor-titulo-principal{
+        h3{
+            font-size: 30px; 
+        }
+        p{
+            font-size: 15px;
+        }
+    } 
+    .contenedor-padre-tarjeta-nosotros{
+        .contenedor-padre-tres-tarjeta{
+            height: 540px !important;
+        }
+        .contenedor-padre-imagen-nosotros{
+            display: none;
+        }
     }
   }
+}
+
+@media only screen and (max-width: 530px) {
+    .sobre-nosotros{
+        .contenedor-padre-tarjeta-nosotros{
+            .contenedor-padre-tres-tarjeta{
+              .contenedor-tres-tarjeta{
+                  .tres-tarjeta {
+                      height: 95px;
+                      padding: 25px 20px;
+                    }
+                } 
+            }
+        }
+    }
+}
+@media only screen and (max-width: 320px) {
+    .sobre-nosotros{
+        .contenedor-padre-tarjeta-nosotros{
+            .contenedor-padre-tres-tarjeta{
+                height: 580px !important;
+              .contenedor-tres-tarjeta{
+                  .tres-tarjeta {
+                      padding: 25px 0px;
+                    }
+                } 
+            }
+        }
+    }
 }

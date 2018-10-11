@@ -60,6 +60,7 @@ class App extends Controller
             'post_type' => 'servicios',
             'numberposts' => -1,
             'order' => 'ASC', 'include' => array(),
+
         ]);
  
         return array_map(function ($post) {
@@ -73,6 +74,50 @@ class App extends Controller
                 'tags' => get_tags($post->ID)    
             ];
         }, $servicios);
+    }
+    function empresarialLoop()
+    {
+        $servicios = get_posts([
+            'post_type' => 'servicios',
+            'numberposts' => -1,
+            'order' => 'ASC', 'include' => array(),
+            'category_name' => 'servicio-empresarial'
+
+        ]);
+ 
+        return array_map(function ($post) {
+            return [
+                'thumbnail' => get_the_post_thumbnail_url($post->ID, 'large'),
+                'title' => get_the_title($post->ID),
+                'resumen' =>apply_filters( 'the_excerpt',get_the_excerpt($post->ID) ),
+                'link' => get_permalink($post->ID),
+                'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
+                'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
+                'tags' => get_tags($post->ID)    
+            ];
+        }, $servicios);
+    }
+    function personalLoop()
+    {
+        $personal = get_posts([
+            'post_type' => 'servicios',
+            'numberposts' => -1,
+            'order' => 'ASC', 'include' => array(),
+            'category_name' => 'servicio-personal'
+
+        ]);
+ 
+        return array_map(function ($post) {
+            return [
+                'thumbnail' => get_the_post_thumbnail_url($post->ID, 'large'),
+                'title' => get_the_title($post->ID),
+                'resumen' =>apply_filters( 'the_excerpt',get_the_excerpt($post->ID) ),
+                'link' => get_permalink($post->ID),
+                'categories' => wp_list_pluck( get_the_category($post->ID),'name'),
+                'content' => apply_filters( 'the_content', get_the_content($post->ID) ),
+                'tags' => get_tags($post->ID)    
+            ];
+        }, $personal);
     }
 }
 add_post_type_support( 'page', 'excerpt' );

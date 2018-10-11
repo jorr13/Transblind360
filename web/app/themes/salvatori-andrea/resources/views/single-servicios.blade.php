@@ -2,10 +2,11 @@
 
 @section('content')
 @include('partials.page-header')
-
+<div class="contenedor-padre-articulo">
     @while(have_posts()) @php the_post() @endphp
         @include('partials.content-single-servicios'.get_post_type())
     @endwhile
+</div>
 <div class="contenedor-padre-detalles-del-servicio">
     <div class="contenedor-titulo-detalle-servicio">
         <h3>{{ get_field('titulo_servicio')}}</h3>

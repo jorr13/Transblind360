@@ -141,8 +141,14 @@
       color: white;
 
       a{
+        text-transform: uppercase;
         color: white;
         font-weight: 600;
+        transition: 0.5s;
+        &:hover{
+          color: $amarillo;
+          transition: 0.5s;
+        }
 
       }
     }

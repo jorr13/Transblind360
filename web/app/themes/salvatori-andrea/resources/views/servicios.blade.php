@@ -14,19 +14,41 @@
         <h3>Nuestros servicios</h3>
         <p>Servicios de transporte ejecutivo seguro para el mercado venezolano desde el año 2015, con una experiencia exitosa, reflejada en la satisfaccion de nuestros clientes</p>
     </div>
-    <div class="conte-servicios columns is-multiline">   
-        @foreach ($servicios_loop as $servicios)
-        <div class="contenedor-padre-tarjeta column is-4 animate fadeInUp">
-            <div class="contenedortarjeta ">
-                <div class="img-noticias" style="background:url('{{$servicios['thumbnail']}}'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
-                <div class="contenido-pasos ">
-                    <h2 class="titulo">{{$servicios['title']}}</h2>
-                    <p class="resumen">{!! $servicios['resumen'] !!}</p>   
-                    <a class="boton-registrar" href="{{$servicios['link']}}">Leer mas</a>
-                </div> 
+    <div class="contenedor-botones-servicios animate fadeInUp">
+        <a href="javascript:void(0)" class="boton-amarillo active-amarillo" id="empresarial">Empresariales</a>
+        <a href="javascript:void(0)" class="boton-gris" id="personal">Personales</a>
+    </div>
+    <div class="contenedor-abuelo-tarjeta animate fadeInUp">
+        <div class="conte-servicios columns is-multiline" id="contenedor-empresarial">
+            @foreach ($empresarial_loop as $empresarial)
+            <div class="contenedor-padre-tarjeta column is-one-third-desktop is-half-tablet" >
+                <div class="contenedortarjeta ">
+                    <div class="img-noticias" style="background:url('{{$empresarial['thumbnail']}}'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
+                    <div class="contenido-pasos ">
+                        <h2 class="titulo">{{$empresarial['title']}}</h2>
+                        <p class="resumen">{!! $empresarial['resumen'] !!}</p>   
+                        <a class="boton-registrar" href="{{$empresarial['link']}}">Leer mas</a>
+                    </div> 
+                </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
+
+        <div class="conte-servicios columns is-multiline" style="display:none;" id="contenedor-personal">
+            @foreach ($personal_loop as $personal)
+            <div class="contenedor-padre-tarjeta column is-one-third-desktop is-half-tablet">
+                <div class="contenedortarjeta ">
+                    <div class="img-noticias" style="background:url('{{$personal['thumbnail']}}'); height:200px; background-size:cover; border-radius: 6px 6px 0px 0px;"></div>
+                    <div class="contenido-pasos ">
+                        <h2 class="titulo">{{$personal['title']}}</h2>
+                        <p class="resumen">{!! $personal['resumen'] !!}</p>   
+                        <a class="boton-registrar" href="{{$personal['link']}}">Leer mas</a>
+                    </div> 
+                </div>
+            </div>
+            @endforeach
+        </div>
+
     </div>
 </div>
 <div class="contenedor-padre-conocer-nuestro-servicios animate fadeInUp">

@@ -1,5 +1,7 @@
 .contenedor-padre-servicios{
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 
     .contenedor-title-servicios{
         width: 80%;
@@ -21,6 +23,56 @@
             font-size: 16px;
         }
     }
+    .contenedor-botones-servicios {
+        position: relative;
+        padding-bottom: 15px;
+        padding-left: 101px;
+        margin-top: 20px;
+
+    
+      .boton-amarillo {
+        padding: 23px 30px;
+        color: #474747;
+        font-weight: 600;
+        font-size: 15px;
+        transition: .5s;
+        
+        &:hover{
+          transition: 0.5s;
+          background: $amarillo;
+          color: white;
+        }
+        &.active-amarillo{
+            transition: 0.5s;
+            background: $amarillo !important;
+            color: white !important;
+        }
+      }
+    
+      .boton-gris {
+        padding: 23px 30px;
+        color: #474747;
+        font-weight: 600;
+        font-size: 15px;
+        transition: .5s;
+        &:hover{
+          transition: 0.5s;
+          background: $gris;
+          color: white;
+        }
+        &.active-gris{
+            transition: 0.5s;
+            background: $gris !important;
+            color: white !important;
+        }
+      }
+    }
+
+
+    .contenedor-abuelo-tarjeta{
+        position: relative;
+        width: 100%;
+        height: auto;
     .conte-servicios{
         padding: 30px 90px 0px 90px;
         position: relative;
@@ -84,6 +136,7 @@
             }
         }
     }
+    }
 }
 @media only screen and (max-width: 915px){
     .contenedor-padre-servicios {
@@ -113,14 +166,56 @@
 }
 @media only screen and (max-width: 768px){
     .contenedor-padre-servicios {
+        .contenedor-title-servicios{
+            h3{
+                font-size: 30px;
+            }
+            p{
+                font-size: 12px;
+            }
+        } 
         .conte-servicios{
-            padding: 50px;
+            padding: 50px !important;
             .contenedor-padre-tarjeta{
                 .contenedortarjeta{
                     .contenido-pasos {
                         height: 330px;
                     }
                 }
+            }
+        }
+    } 
+    .contenedor-padre-conocer-nuestro-servicios{
+        .contenedor-title-nuestro-servicio{
+            h3{
+                font-size: 20px !important;
+            }
+        } 
+    } 
+}
+@media only screen and (max-width: 440px){
+    .contenedor-padre-servicios {
+        .contenedor-abuelo-tarjeta {
+            .conte-servicios{
+                .contenedor-padre-tarjeta{
+                    .contenedortarjeta{
+                        .contenido-pasos{
+                            height: 165px !important;
+                            p{
+                                display: none;
+                            }
+                        } 
+                    }
+                }
+            }
+        }   
+        .contenedor-botones-servicios {
+            padding-left: 20px;
+            .boton-amarillo{
+                padding: 23px 17px;
+            }
+            .boton-gris{
+                padding: 23px 17px;   
             }
         }
     } 

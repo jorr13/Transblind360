@@ -44,5 +44,8 @@ $('document').ready(function(){
       return transEffect;
     }
     Barba.Pjax.start();
+
+
   
 });
+

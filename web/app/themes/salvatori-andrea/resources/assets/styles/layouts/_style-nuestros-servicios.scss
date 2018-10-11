@@ -9,6 +9,7 @@
     color: white;
     margin: 0 auto;
     margin-top: 3vh;
+    letter-spacing: 2px;
   
     h2{
       font-size: 30px;
@@ -26,8 +27,8 @@
     margin-top: 3vh;
 
     .tarjeta-grande {  
-        padding: 30px; 
-        height: 437px;
+        height: 438px;
+        padding: 0 !important;
         overflow: hidden;
         position: relative;
         transition: 0.5s;
@@ -52,9 +53,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        z-index: 1;
       }
 
       .contenedor-contenido-servicio {
+        padding-left: 38px;
         bottom: 26px;
         position: absolute;
         color: white;
@@ -62,6 +65,7 @@
         height: 45px;
         overflow: hidden;
         transition: 0.5s;
+        z-index: 2;
 
         .contenedor-title-grande{
             position: relative;
@@ -126,7 +130,7 @@
 
         &:hover {
           .contenedor-contenido-servicio-cuatro-tarjeta{
-            height: 220px;
+            height: 200px;
             transition: 0.5s;
           }
         }
@@ -205,7 +209,8 @@
   .contenedor-boton-vermas{
     margin: 0 auto;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
 
     .boton-vermas{
       padding: 6px 15px;
@@ -242,33 +247,31 @@
     .tarjeta-peque {
       height: 300px !important;
       .contenedor-contenido-servicio-cuatro-tarjeta {
-        .contenedor-title-peque{
-          .contenedortitle-peque::after {
-            display: none;
-          }
+        height: 130px !important;
+        .extracto-tarjeta-peque{
+          display: none;
+        }
+        .contenedor-boton-tarjeta-peque{
+          margin-top: 20px;
         }
       } 
     }
   }
 }
-@media only screen and (max-width: 980px) {
-  .cuatrotarjetas {
-    .tarjeta-peque {
-      .contenedor-contenido-servicio-cuatro-tarjeta {
-        .extracto-tarjeta-peque{
-          font-size: 10px !important;
-        }
-      }
-    }
-  }
-}
 @media only screen and (max-width: 876px) {
-
   .contenedor-padre-nuestros-servicios {
     .contenedor-padre-tarjetas-servicios{
       .tarjeta-grande {
         height: 500px !important;
-        
+        .contenedor-contenido-servicio{
+          height: 120px !important;
+          .extracto-tarjeta-grande{
+            display: none;
+          }
+          .contenedor-boton-tarjeta{
+            margin-top: 35px;
+          }
+        } 
         &::before{
           height: 500px;
         }
@@ -290,6 +293,22 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .contenedor-title-nuestro-servicios{
+    padding-bottom: 10px;
+    h2 {
+      font-size: 25px !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  } 
+  .contenedor-padre-nuestros-servicios {
+    .contenedor-padre-tarjetas-servicios{
+      .tarjeta-grande {
+        height: 300px !important;
+      }
+    } 
+  }
   .cuatrotarjetas {
     .tarjeta-peque {
       height: 250 !important;
@@ -313,21 +332,8 @@
   .cuatrotarjetas {
     .tarjeta-peque {
       .contenedor-contenido-servicio-cuatro-tarjeta {
-        .contenedor-title-peque{
-          .contenedortitle-peque::after {
-            display: none;
-          }
-        }
-
-      }
-    }
-  }
-}
-@media only screen and (max-width: 400px) {
-  .cuatrotarjetas {
-    .tarjeta-peque {
-      .contenedor-contenido-servicio-cuatro-tarjeta {
-        .contenedor-boton-tarjeta-peque{
+        height: 110px !important;
+        .extracto-tarjeta-peque{
           display: none;
         }
       }

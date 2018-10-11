@@ -84,7 +84,7 @@
             <a href="" class="boton-enviar">enviar mensaje</a>
           </div>
           <div class="parrafo-abajo-footer">
-            <h2>o contactenos a travez de:</h2>
+            <span>o contactenos a travez de:</span>
             <p class="parrafo-primario">
               0212 556 54 54 / 0212 666 88 55
             </p>
