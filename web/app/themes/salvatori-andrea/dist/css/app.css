@@ -17261,7 +17261,7 @@ label.panel-block:hover {
   position: fixed;
   width: 100%;
   z-index: 99;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17528,6 +17528,14 @@ label.panel-block:hover {
   .main-cover .tarjeta-video-texto {
     bottom: 0;
     border-bottom: 2px solid #474747;
+  }
+
+  .main-cover .contenedor-title-tarjeta h2 {
+    font-size: 30px;
+  }
+
+  .main-cover .contenedor-extracto {
+    font-size: 15px;
   }
 }
 
@@ -19551,15 +19559,23 @@ body#tinymce {
 }
 
 @media only screen and (max-width: 768px) {
-  .servicios-template-default .has-post-thumbnail {
+  .contenedor-padre-articulo .has-post-thumbnail {
     padding: 10px 50px 50px 50px;
   }
 
-  .servicios-template-default .contenedor-tarjetas {
+  .contenedor-padre-articulo .has-post-thumbnail h2 {
+    font-size: 30px;
+  }
+
+  .contenedor-padre-articulo .has-post-thumbnail h3 {
+    font-size: 20px;
+  }
+
+  .contenedor-padre-articulo .contenedor-tarjetas {
     text-align: center;
   }
 
-  .servicios-template-default .contenedor-tarjetas .tarjeta-descrip-valores .contendor-img-valores {
+  .contenedor-padre-articulo .contenedor-tarjetas .tarjeta-descrip-valores .contendor-img-valores {
     margin: 0 auto;
   }
 
@@ -19573,12 +19589,24 @@ body#tinymce {
   }
 
   .contenedor-padre-conocer-nuestro-servicios .contenedor-boton-ir-servicios {
-    width: 50%;
+    width: 45%;
+  }
+
+  .contenedor-padre-detalles-del-servicio .contenedor-titulo-detalle-servicio h3 {
+    font-size: 30px;
+  }
+
+  .contenedor-padre-detalles-del-servicio .contenedor-tarjetas .tarjeta-descrip-valores {
+    text-align: center;
+  }
+
+  .contenedor-padre-detalles-del-servicio .contenedor-tarjetas .tarjeta-descrip-valores .contendor-img-valores {
+    margin: 0 auto;
   }
 }
 
 @media only screen and (max-width: 390px) {
-  .servicios-template-default .has-post-thumbnail h2 {
+  .contenedor-padre-articulo .has-post-thumbnail h2 {
     font-size: 35px;
   }
 

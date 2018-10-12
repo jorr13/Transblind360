@@ -10990,8 +10990,8 @@ Vue.component('pages-loop', __webpack_require__(376));
 var imgItems = $('.slider li').length; // Numero de Slides
 var imgPos = 1;
 
-$('.slider li').hide(); // Ocultanos todos los slides
-$('.slider li:first').show(); // Mostramos el primer slide
+//  $('.slider li').fadeOut(); // Ocultanos todos los slides
+//  $('.slider li:first').fadeIn(); // Mostramos el primer slide
 
 function nextSlider() {
   if (imgPos >= imgItems) {
@@ -11000,15 +11000,11 @@ function nextSlider() {
     imgPos++;
   }
 
-  $('.slider li').hide(); // Ocultamos todos los slides
+  $('.slider li').fadeOut(); // Ocultamos todos los slides
   $('.slider li:nth-child(' + imgPos + ')').fadeIn(); // Mostramos el Slide seleccionado
 }
 
 Barba.Dispatcher.on('transitionCompleted', function (currentStatus, oldStatus, container) {
-
-  setTimeout(function () {
-    clearInterval(nextSlider());
-  }, 15000);
 
   var app = new Vue({
     el: '#app'
@@ -11065,11 +11061,11 @@ Barba.Dispatcher.on('transitionCompleted', function (currentStatus, oldStatus, c
     $('#contenedor-personal, #contenedor-empresarial').fadeOut();
     $('#contenedor-personal').fadeIn();
   });
-
-  var loop = setInterval(function () {
-    nextSlider();
-  }, 3000);
 });
+
+var loop = setInterval(function () {
+  nextSlider();
+}, 3000);
 
 /***/ }),
 

@@ -76,9 +76,9 @@
         </div>
         <div class="contenedor-input">
           <div class="contenedor-input-tarjeta">
-            <input type="text" placeholder="nombre">
-            <input type="text" placeholder="e-mail">
-            <input type="text" placeholder="Redacta tu mensaje">
+            <input type="text" placeholder="nombre"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nombre'">
+            <input type="text" placeholder="e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'">
+            <input type="text" placeholder="Redacta tu mensaje" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Redacta tu mensaje'">
           </div>
           <div class="container-boton-enviar">
             <a href="" class="boton-enviar">enviar mensaje</a>

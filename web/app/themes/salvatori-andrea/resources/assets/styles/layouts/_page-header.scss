@@ -78,6 +78,14 @@
       bottom: 0;
       border-bottom: 2px solid $gris;
     }
+    .contenedor-title-tarjeta{
+      h2{
+        font-size: 30px;
+      }
+    }
+    .contenedor-extracto{
+      font-size: 15px;
+    }
   }
 }
 @media only screen and (max-width: 370px){
